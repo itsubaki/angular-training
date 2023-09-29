@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
+import { HelloService } from './service/hello.service';
 
 @NgModule({
   declarations: [
@@ -10,7 +10,11 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    HelloService
+  ],
+  bootstrap: [
+    AppComponent,
+  ]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HelloService } from './service/hello.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'webapp';
+  public message = '';
+
+  constructor(private hello: HelloService){
+    this.message = hello.getMessage();
+  }
 }
