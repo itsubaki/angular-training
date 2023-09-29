@@ -3,6 +3,7 @@ SHELL := /bin/bash
 install:
 	npm install -g @angular/cli; ng version
 	npm install -g angular-http-server
+	npm install
 
 run:
 	ng serve -c local --open
