@@ -1,1 +1,16 @@
-{{ message }}
+<div *ngFor="let item of repos">
+    <div class="item">
+        <a>
+            <span class="name">{{ item.name }}</span>
+        </a>
+        <div class="description">{{ item.description }}</div>
+        <p>
+            {{ item.language }}
+            {{ item.stargazers_count }}
+            {{ item.forks }}
+            <span *ngIf="item.license">
+                {{ item.license.name }}
+            </span>
+        </p>
+    </div>
+</div>

@@ -1,15 +1,21 @@
-import { Component } from '@angular/core';
-import { HelloService } from './service/hello.service';
+import { Component, OnInit } from '@angular/core';
+import { GitHubService, Repository } from './service/github.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  public message = '';
+export class AppComponent implements OnInit {
+  public repos: Repository[] = [];
 
-  constructor(private hello: HelloService){
-    this.message = hello.getMessage();
+  constructor(
+    private github: GitHubService,
+  ) { }
+
+  ngOnInit() {
+    this.github.getRepos('angular').subscribe((repos: Repository[]) => {
+      this.repos = repos;
+    });
   }
 }
