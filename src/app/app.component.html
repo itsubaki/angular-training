@@ -1,17 +1,1 @@
-<div *ngFor="let item of repos">
-    <div class="item">
-        <a [href]="item.html_url">
-            <span class="name">{{ item.name }}</span>
-        </a>
-        <div class="description">{{ item.description }}</div>
-        <div>
-            <span [class]="color(item.language)"></span>
-            {{ item.language }}
-            {{ item.stargazers_count }}
-            {{ item.forks }}
-            <span *ngIf="item.license">
-                {{ item.license.name }}
-            </span>
-        </div>
-    </div>
-</div>
+<app-repositories></app-repositories>
