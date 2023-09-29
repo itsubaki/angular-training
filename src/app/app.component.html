@@ -1,16 +1,16 @@
 <div *ngFor="let item of repos">
     <div class="item">
-        <a>
+        <a [href]="item.html_url">
             <span class="name">{{ item.name }}</span>
         </a>
         <div class="description">{{ item.description }}</div>
-        <p>
+        <div>
             {{ item.language }}
             {{ item.stargazers_count }}
             {{ item.forks }}
             <span *ngIf="item.license">
                 {{ item.license.name }}
             </span>
-        </p>
+        </div>
     </div>
 </div>
