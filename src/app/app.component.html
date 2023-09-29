@@ -5,6 +5,7 @@
         </a>
         <div class="description">{{ item.description }}</div>
         <div>
+            <span [class]="color(item.language)"></span>
             {{ item.language }}
             {{ item.stargazers_count }}
             {{ item.forks }}
