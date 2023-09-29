@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { GitHubService } from './service/github.service';
 import { HttpClientModule } from '@angular/common/http';
-import { RepositoriesComponent } from './repositories/repositories.component';
+import { RepositoriesComponent } from './component/repositories.component';
 
 @NgModule({
   declarations: [

@@ -10,4 +10,7 @@ run:
 
 build:
 	ng build
-	cd dist/webapp; angular-http-server -p4201
+	cd dist/webapp; angular-http-server -p 4201
+
+test:
+	ng test

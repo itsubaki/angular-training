@@ -1,9 +1,17 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RepositoriesComponent } from './component/repositories.component';
 
 describe('AppComponent', () => {
   beforeEach(() => TestBed.configureTestingModule({
-    declarations: [AppComponent]
+    declarations: [
+      AppComponent,
+      RepositoriesComponent,
+    ],
+    imports: [
+      HttpClientModule,
+    ],
   }));
 
   it('should create the app', () => {
