@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { GitHubService, Repository } from '../service/github.service';
 
 @Component({
-  selector: 'app-repositories',
-  templateUrl: './repositories.component.html',
-  styleUrls: ['./repositories.component.scss']
+  selector: 'app-repository',
+  templateUrl: './repository.component.html',
+  styleUrls: ['./repository.component.scss']
 })
-export class RepositoriesComponent implements OnInit {
+export class RepositoryComponent implements OnInit {
   public repos: Repository[] = [];
 
   constructor(
@@ -60,3 +60,4 @@ export class RepositoriesComponent implements OnInit {
     }
   }
 }
+

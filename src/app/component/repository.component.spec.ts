@@ -1,21 +1,21 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { RepositoriesComponent } from './repositories.component';
+import { RepositoryComponent } from './repository.component';
 import { HttpClientModule } from '@angular/common/http';
 
 describe('RepositoriesComponent', () => {
-  let component: RepositoriesComponent;
-  let fixture: ComponentFixture<RepositoriesComponent>;
+  let component: RepositoryComponent;
+  let fixture: ComponentFixture<RepositoryComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [
-        RepositoriesComponent,
+        RepositoryComponent,
       ],
       imports: [
         HttpClientModule,
       ],
     });
-    fixture = TestBed.createComponent(RepositoriesComponent);
+    fixture = TestBed.createComponent(RepositoryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

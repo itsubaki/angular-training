@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { RepositoriesComponent } from './component/repositories.component';
+import { RepositoryComponent } from './component/repository.component';
 
 describe('AppComponent', () => {
   beforeEach(() => TestBed.configureTestingModule({
     declarations: [
       AppComponent,
-      RepositoriesComponent,
+      RepositoryComponent,
     ],
     imports: [
       HttpClientModule,

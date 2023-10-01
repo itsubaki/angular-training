@@ -3,12 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { GitHubService } from './service/github.service';
 import { HttpClientModule } from '@angular/common/http';
-import { RepositoriesComponent } from './component/repositories.component';
+import { RepositoryComponent } from './component/repository.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RepositoriesComponent
+    RepositoryComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +19,7 @@ import { RepositoriesComponent } from './component/repositories.component';
   ],
   bootstrap: [
     AppComponent,
-    RepositoriesComponent,
+    RepositoryComponent,
   ]
 })
 export class AppModule { }
