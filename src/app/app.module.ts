@@ -19,7 +19,6 @@ import { RepositoryComponent } from './component/repository.component';
   ],
   bootstrap: [
     AppComponent,
-    RepositoryComponent,
   ]
 })
 export class AppModule { }

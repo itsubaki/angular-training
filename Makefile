@@ -13,4 +13,4 @@ build:
 	cd dist/webapp; angular-http-server -p 4201
 
 test:
-	ng test
+	ng test --browsers ChromeHeadless --no-watch
