@@ -1,6 +1,5 @@
 # angular-training
 
-
-# Links
+## Links
 
  - [Angular tutorials](https://angular.jp/tutorial)
